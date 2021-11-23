@@ -6,6 +6,8 @@ import { ErrorBoundary } from 'react-error-boundary';
 import ErrorBoundaryFallback from './js/generic/ErrorBoundaryFallback';
 //styles
 import { Container } from './js/components/styles/Container.styled';
+//components
+import Header from './js/components/Header';
 
 const App = () => (
 	<ErrorBoundary
@@ -15,6 +17,7 @@ const App = () => (
 			console.log('Try again clicked');
 		}}
 	>
+		<Header />
 		<Container>
 			<h1>styled components</h1>
 		</Container>
