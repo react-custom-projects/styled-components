@@ -9,12 +9,14 @@ import ErrorBoundaryFallback from './js/generic/ErrorBoundaryFallback';
 //constants
 import { theme } from './js/constants/Constants';
 //styles
+import GlobalStyles from './js/components/styles/Global';
 import { Container } from './js/components/styles/Container.styled';
 //components
 import Header from './js/components/Header';
 
 const App = () => (
 	<ThemeProvider theme={theme}>
+		<GlobalStyles />
 		<ErrorBoundary
 			FallbackComponent={ErrorBoundaryFallback}
 			onReset={() => {
