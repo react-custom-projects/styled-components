@@ -5,6 +5,8 @@ import { Flex } from './styles/Flex.styled';
 import { StyledFooter } from './styles/Footer.styled';
 //images
 import whiteLogo from '../../assets/images/logo_white.svg';
+//components
+import SocialIcons from './SocialIcons';
 
 const Footer = () => (
 	<StyledFooter>
@@ -30,7 +32,7 @@ const Footer = () => (
 					<li>Blog</li>
 					<li>Contact Us</li>
 				</ul>
-				{/* social icons */}
+				<SocialIcons />
 			</Flex>
 			<p>&copy; 2021 Huddle. All rights reserved.</p>
 		</Container>
