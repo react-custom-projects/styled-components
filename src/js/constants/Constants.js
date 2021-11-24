@@ -4,4 +4,5 @@ export const theme = {
 		body: '#ffffff',
 		footer: '#003333',
 	},
+	mobile: '768px',
 };
