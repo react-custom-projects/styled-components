@@ -14,6 +14,7 @@ import { Container } from './js/components/styles/Container.styled';
 //components
 import Header from './js/components/Header';
 import Card from './js/components/shared/Card';
+import Footer from './js/components/Footer';
 
 const App = () => (
 	<ThemeProvider theme={theme}>
@@ -31,6 +32,7 @@ const App = () => (
 					<Card key={el.id} id={el.id} title={el.title} body={el.body} image={el.image} />
 				))}
 			</Container>
+			<Footer />
 		</ErrorBoundary>
 	</ThemeProvider>
 );
